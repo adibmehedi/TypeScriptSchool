@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./src/index.js"></script>
+    <style>
+        td{
+            padding:5px 20px;
+        }
+    </style>
     <title>Typescript School</title>
 </head>
 <body>
-    Hello
+    <div>
+        Name:
+        <input id='name'>
+        Roll:
+        <input id='roll'>
+        Score:
+        <input id='score'>
+        <button id='addStudnet'>Add</button>
+    </div>
+    <table id='studentList'>
+    </table>
+
+    <script src="dist/bundle.js"></script>
 </body>
 </html>
