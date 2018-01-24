@@ -109,15 +109,10 @@ function addListButtonEventListeners() {
     }
 }
 function deleteButtonEventListener() {
-    debugger;
     student.deleteStudent(this.value);
     renderStudentList();
 }
-// student.addStudent('Adib',2,100);
-// student.addStudent('Mehedi',1,500);
-debugger;
 renderStudentList();
-console.log("This", document.getElementById('studentList'));
 
 
 /***/ }),

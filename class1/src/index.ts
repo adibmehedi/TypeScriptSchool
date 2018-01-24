@@ -1,5 +1,6 @@
 import { Student } from "./student";
 
+
 let students: object[];
 let student = new Student();
 
@@ -8,7 +9,6 @@ let addStudentButton = document.getElementById('addStudnet');
 let inputName = <HTMLInputElement>document.getElementById('name');
 let inputRoll = <HTMLInputElement>document.getElementById('roll');
 let inputScore = <HTMLInputElement>document.getElementById('score');
-
 addStudentButton.addEventListener('click', addStudentButtonEvent);
 
 function addStudentButtonEvent() {
@@ -46,19 +46,12 @@ function addListButtonEventListeners(){
 }
 
 function deleteButtonEventListener(){
-    debugger;
     student.deleteStudent(this.value);
     renderStudentList();
 }
 
-
-
-// student.addStudent('Adib',2,100);
-// student.addStudent('Mehedi',1,500);
-debugger;
 renderStudentList();
 
-console.log("This", document.getElementById('studentList'));
 
 
 
